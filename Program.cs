@@ -10,6 +10,11 @@ namespace TheCalculator
     {
         static void Main(string[] args)
         {
+            
+            // Nate Schlusler
+            // CIT 110
+            // Calculator Using Loops
+            
             // variables
             double operand1, operand2;
             double answer = 0;
@@ -83,8 +88,6 @@ namespace TheCalculator
 
                 } while (!validOperation);
 
-
-
                 switch (operation)
                 {
                     case "ADD":
@@ -109,17 +112,14 @@ namespace TheCalculator
                             Console.WriteLine("Invalid choice");
                             break;
                         }
-
-
-
-
-
-
-
+                    
+                // calculation
                         Console.WriteLine($"{operand1} {symbol} {operand2} = {answer}");
                         Console.WriteLine();
                         Console.WriteLine("Press any key to continue.");
                         Console.ReadKey();
+                // end application
+                
                         Console.WriteLine();
                         Console.WriteLine("Press s to exit application, otherwise press any key to continue.");
                         userResponse = Console.ReadLine().ToUpper();
